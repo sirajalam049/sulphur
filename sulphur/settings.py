@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 
-#Path or uploading files w.r.t. MEDIA_ROOT
+# Path or uploading files w.r.t. MEDIA_ROOT
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
 CKEDITOR_IMAGE_BACKEND = "pillow"
@@ -51,8 +51,6 @@ CKEDITOR_CONFIGS = {
         ],
     },
 }
-
-
 
 
 INSTALLED_APPS = [
@@ -110,9 +108,12 @@ WSGI_APPLICATION = 'sulphur.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sulphur',
         'OPTIONS': {
             'read_default_file': BASE_DIR + '\sulphur\my.cnf'
-        }
+        },
+        'USER': 'root',
+        'PASSWORD': 'radiant123'
     }
 }
 
