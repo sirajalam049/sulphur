@@ -113,7 +113,7 @@ DATABASES = {
             'read_default_file': BASE_DIR + '\sulphur\my.cnf'
         },
         'USER': 'root',
-        'PASSWORD': 'radiant123'
+        'PASSWORD': 'toor'
     }
 }
 
